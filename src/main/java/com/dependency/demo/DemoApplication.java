@@ -1,14 +1,13 @@
-package com.hari.depndabot.depndabot;
+package com.dependency.demo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class DepndabotApplication {
+public class DemoApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(DepndabotApplication.class, args);
+		SpringApplication.run(DemoApplication.class, args);
 	}
-	
-//Hello
+
 }

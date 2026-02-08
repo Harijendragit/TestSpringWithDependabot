@@ -4,7 +4,7 @@ plugins {
 	id 'io.spring.dependency-management' version '1.1.7'
 }
 
-group = 'com.hari.depndabot'
+group = 'com.dependency'
 version = '0.0.1-SNAPSHOT'
 description = 'Demo project for Spring Boot'
 
@@ -19,15 +19,8 @@ repositories {
 }
 
 dependencies {
-	implementation 'org.springframework.boot:spring-boot-starter-data-rest'
-	implementation 'org.springframework.boot:spring-boot-starter-restclient'
 	implementation 'org.springframework.boot:spring-boot-starter-webmvc'
-	// Source: https://mvnrepository.com/artifact/com.microsoft.sqlserver/mssql-jdbc
-	implementation group: 'com.microsoft.sqlserver', name: 'mssql-jdbc', version: '8.4.0.jre8'
-	// Source: https://mvnrepository.com/artifact/commons-beanutils/commons-beanutils
-	implementation group: 'commons-beanutils', name: 'commons-beanutils', version: '1.9.2'
-	testImplementation 'org.springframework.boot:spring-boot-starter-data-rest-test'
-	testImplementation 'org.springframework.boot:spring-boot-starter-restclient-test'
+	runtimeOnly 'com.mysql:mysql-connector-j'
 	testImplementation 'org.springframework.boot:spring-boot-starter-webmvc-test'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
