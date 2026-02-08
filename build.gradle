@@ -21,6 +21,8 @@ repositories {
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-webmvc'
 	runtimeOnly 'com.mysql:mysql-connector-j'
+	implementation 'com.microsoft.sqlserver:mssql-jdbc:8.4.0.jre8'
+	implementation 'commons-beanutils:commons-beanutils:1.8.3'
 	testImplementation 'org.springframework.boot:spring-boot-starter-webmvc-test'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
